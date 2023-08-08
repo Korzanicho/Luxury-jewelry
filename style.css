@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	font-family: "Lucida Sans", sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1048px;
+}
+
+.header {
+	padding: 1.1rem;
+}
+
+.logo {
+	width: 800px;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.nav-list {
+	text-align: center;
+	list-style-type: none;
+}
+
+.nav-item {
+	margin-right: 1rem;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.nav-item a, a {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav-item a:hover {
+	color: #A18B76;
+	transition: color 0.3s ease-in-out;
+}
+
+.banner {
+	padding: .8rem;
+	margin: 2rem;
+	border-radius: 3px;
+	background-size: cover;
+	background-attachment: fixed;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	background-image: url("images/pexels-solodsha-8105116.jpg");
+}
+
+.banner h1 {
+	color: #fff;
+	text-align: center;
+}
+
+.banner p {
+	color: #fff;
+	text-align: center;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product {
+	flex-basis: 30%;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 2rem;
+	border-radius: 3px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.product:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product:hover .product__image {
+	transform: scale(1.1);
+}
+
+.product__image {
+	transition: .3s;
+	height: 200px;
+}
+
+.product__button {
+	display: block;
+	width: 100%;
+	padding: .8rem;
+	border: none;
+	background-color: #A18B76;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.product__button:hover {
+	transform: .3s;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 3px;
+	background-color: #A18B76;
+}
+
+.footer img {
+	width: 250px;
+	max-width: 100%;
+}
+
+.footer > div {
+	flex: 1;
+	padding: 1rem;
+	text-align: center;
+}
